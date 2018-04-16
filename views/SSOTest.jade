@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p 这里是测试站点A : IP = #{ip}
+  p 状态：#{msg}
+  form(action='/test/login')
+    button 登录
+  br
+  form(action='/test/logout')
+    button 注销
